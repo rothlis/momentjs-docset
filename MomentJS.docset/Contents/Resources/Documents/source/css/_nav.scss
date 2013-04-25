@@ -1,0 +1,177 @@
+.is-home .home-nav,
+.is-test .test-nav {
+	background: $background-color;
+	color: #333;
+}
+
+.is-docs .docs-nav {
+	background: #333;
+}
+
+nav.top {
+	height: 50px;
+	background: #111;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0 20px;
+	font-weight: 200;
+	z-index: 2001;
+
+	a {
+		float: left;
+		color: #ccc;
+		line-height: 50px;
+		padding: 0 15px;
+		text-decoration: none;
+		font-size: 16px;
+		display: block;
+
+		&:hover {
+			background: $background-color;
+			color: #333;
+		}
+	}
+
+	iframe {
+		margin: 14px 0 0 15px;
+	}
+
+	@include size(tablet) {
+		padding: 0 10px;
+
+		a {
+			padding: 0 10px;
+		}
+
+		iframe {
+			display: none;
+		}
+	}
+
+	@include size(mobile) {
+		height: auto;
+		padding: 0;
+		position: static;
+		overflow: hidden;
+
+		a {
+			float: none;
+			border: 0;
+			margin-bottom: 0;
+			line-height: 30px;
+			padding: 5px 10px;
+			text-decoration: none;
+			font-size: 14px;
+
+			&.logo {
+				border-bottom: 1px solid #000;
+			}
+
+			&.docs,
+			&.test,
+			&.github,
+			&.twitter {
+				float: left;
+				width: 23%;
+				text-align: center;
+			}
+
+			&.test,
+			&.github,
+			&.twitter {
+				border: 0;
+				border-left: 1px solid #000;
+			}
+
+			&.twitter {
+				width: 31%;
+			}
+		}
+
+		iframe {
+			display: none;
+		}
+	}
+
+}
+
+nav.subnav {
+	height: 40px;
+	background: #333;
+	position: fixed;
+	top: 50px;
+	left: 0;
+	right: 0;
+	padding: 0 20px;
+	font-weight: 200;
+	z-index: 2000;
+
+	@include size(mobile) {
+		display: none;
+	}
+
+	.section {
+		display: inline-block;
+		height: 40px;
+		line-height: 40px;
+		position: relative;
+
+		a {
+			padding: 0 5px;
+			text-decoration: none;
+			border: 1px solid transparent;
+			border-width: 0 1px;
+			display: block;
+			font-size: 14px;
+			color: #ccc;
+		}
+
+		.dropdown {
+			position: absolute;
+			top: 40px;
+			left: 0;
+			background: #fff;
+			min-width: 100%;
+			border: 1px solid #333;
+			border-top: 0;
+			display: none;
+			@include box-sizing(border-box);
+
+			a {
+				padding: 0 10px;
+				white-space: nowrap;
+				line-height: 30px;
+				color: #333;
+
+				&:hover {
+					background: #eee;
+				}
+			}
+		}
+
+		&:hover {
+			> a {
+				border-color: #333;
+				background: #fff;
+				color: #333;
+			}
+			.dropdown {
+				display: block;
+			}
+		}
+	}
+
+	@include size(tablet) {
+		padding: 0 10px;
+		height: auto;
+
+		.section {
+			a {
+				padding: 0 5px;
+				font-size: 14px;
+			}
+		}
+	}
+}
