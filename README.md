@@ -1,12 +1,19 @@
 Moment.js docset for Dash
 ===============
 
-Subscribe with [Dash](http://kapeli.com/ "Dash – Snippet Manager, Documentation Browser") to this Moment.js docset.
+Instant offline access to [MomentJS](http://momentjs.com/) documentation with 
+ [Dash](http://kapeli.com/dash "Dash – Snippet Manager, Documentation Browser"), an API Documentation Browser and Code Snippet Manager
 
-https://github.com/rothlis/momentjs-docset/raw/master/MomentJS.xml
 
-### Dash Feed
 
-Here's the Dash feed url that unfortunatly cannot be turned into a url on Github:
+### Subscribe
 
-`dash-feed://https%3A%2F%2Fgithub.com%2Frothlis%2Fmomentjs-docset%2Fraw%2Fmaster%2FMomentJS.xml)`
+Manually copy and paste the Docset Feed URL in Dash > Preferences... > Downloads > +
+
+`https://github.com/rothlis/momentjs-docset/raw/master/MomentJS.xml`
+
+or
+
+Copy and pasting this custom URL scheme in Chrome/Safari, which will cause Dash to subscribe to that feed:
+
+`dash-feed://https%3A%2F%2Fgithub.com%2Frothlis%2Fmomentjs-docset%2Fraw%2Fmaster%2FMomentJS.xml`
