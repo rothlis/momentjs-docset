@@ -2,66 +2,74 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="css/style.css?v=2013-04-18T14:36:21-07:00" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="static/css/style-v=2013-10-14T04_34_24-04_00.css" />
 		<title>Moment.js | Parse, validate, manipulate, and display dates in javascript.</title>
 	</head>
-	<body class="is-home">
+	<body class="is-core is-home">
 		<nav class="top">
-			<a class="logo home-nav" href="index.html">Moment.js</a>
-			<a class="docs-nav" href="./docs/index.html">Docs</a>
-			<a class="test-nav" href="./test/index.html">Tests</a>
-			<a class="github" href="https://github.com/timrwood/moment/">Github</a>
-			<a class="twitter" href="https://twitter.com/momentjs">@momentjs</a>
-			<iframe src="http://ghbtns.com/github-btn.html?user=timrwood&repo=moment&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+			<a class="logo core-nav" href="index.html">Moment.js</a>
+			<a class="logo timezone-nav" href="timezone/index.html">Moment Timezone</a>
+			
+	<a class="home-nav" href="index.html">Home</a>
+	<a class="docs-nav" href="docs/index.html">Docs</a>
+	<a class="test-nav" href="test/index.html">Tests</a>
+
+			
+	<iframe src="http://ghbtns.com/github-btn.html?user=moment&repo=moment&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="180" height="30"></iframe>
+
 		</nav>
-		<header>
-			<div class="share">
-				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://momentjs.com" data-via="momentjs" data-lang="en" data-count="vertical"></a>
-				<div class="g-plusone" data-size="tall" data-href="http://momentjs.com"></div>
-			</div>
-			<div class="watch">
-				<div class="band">
-					<div class="face">
-						<div id="hour"></div>
-						<div id="minute"></div>
-						<div id="second"></div>
-					</div>
-				</div>
-				<h1>Moment.js<span>2.0.0</span></h1>
-			</div>
-			<hgroup>
-				
+		
+<header>
+	<div class="circle">
+		<div class="face">
+			<div id="hour"></div>
+			<div id="minute"></div>
+			<div id="second"></div>
+		</div>
+	</div>
+	<div class="title">
+		<div class="title-inset">
+			<h1>Moment.js<span>2.3.1</span></h1>
+			
 	<h2>
-		A 5.5kb javascript date library for
+		A  javascript date library for
 		parsing, validating, manipulating, and formatting dates.
 	</h2>
 
-			</hgroup>
-			<aside>
-				
-					<div class="download">
-						<a class="button gzipped" href="https://raw.github.com/timrwood/moment/2.0.0/min/moment.min.js">
-							<strong>Minified Source</strong>
-							<span class="filesize">5.5kb</span>
-						</a>
-						<a class="button source" href="https://raw.github.com/timrwood/moment/2.0.0/moment.js">
-							<strong>Full Source</strong>
-							<span class="filesize">43.9kb </span>
-						</a>
-					</div>
-				
-			</aside>
-		</header>
+		</div>
+	</div>
+</header>
+<aside>
+	<div class="download section">
+                <a class="button source" href="downloads/moment-with-langs.js">
+			<strong>moment-with-langs.js</strong>
+			<span class="filesize">227.4kb </span>
+		</a><a class="button gzipped" href="downloads/moment-with-langs.min.js">
+			<strong>moment-with-langs.min.js</strong>
+			<span class="filesize">29.5kb</span>
+		</a><a class="button gzipped" href="downloads/moment.min.js">
+			<strong>moment.min.js</strong>
+			<span class="filesize">8.8kb</span>
+		</a>
+	</div>
+	<div class="section">
+		<pre class="shell"><code>bower install -S momentjs</code></pre>
+		<pre class="shell"><code>npm install --save moment</code></pre>
+		<pre class="pm"><code>Install-Package Moment.js</code></pre>
+	</div>
+</aside>
+
 		<div class="container">
 			
 	<div class="examples">
 		<article>
 			<h2>Formatting dates</h2>
 			<div class="input">
-				<pre lang="javascript">moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>);
-moment().format(<span class="string">'dddd'</span>);
-moment().format(<span class="string">"MMM Do YY"</span>);
-moment().format(<span class="string">'YYYY [escaped] YYYY'</span>);
+				<pre lang="javascript">moment().format('MMMM Do YYYY, h:mm:ss a');
+moment().format('dddd');
+moment().format("MMM Do YY");
+moment().format('YYYY [escaped] YYYY');
 moment().format();</pre>
 			</div>
 			<div class="output">
@@ -80,8 +88,16 @@ moment().format();</pre>
 				Moroccan Arabic
 			</div>
 		
+			<div class="button " data-lang="bs">
+				Bosnian
+			</div>
+		
 			<div class="button " data-lang="bg">
 				Bulgarian
+			</div>
+		
+			<div class="button " data-lang="br">
+				Breton
 			</div>
 		
 			<div class="button " data-lang="ca">
@@ -104,8 +120,16 @@ moment().format();</pre>
 				German
 			</div>
 		
+			<div class="button " data-lang="el">
+				Greek
+			</div>
+		
 			<div class="button active" data-lang="en">
 				English
+			</div>
+		
+			<div class="button " data-lang="en-au">
+				English (Australia)
 			</div>
 		
 			<div class="button " data-lang="en-ca">
@@ -124,20 +148,28 @@ moment().format();</pre>
 				Spanish
 			</div>
 		
+			<div class="button " data-lang="et">
+				Estonian
+			</div>
+		
 			<div class="button " data-lang="eu">
 				Basque
+			</div>
+		
+			<div class="button " data-lang="fa">
+				Persian
 			</div>
 		
 			<div class="button " data-lang="fi">
 				Finnish
 			</div>
 		
-			<div class="button " data-lang="fr">
-				French
-			</div>
-		
 			<div class="button " data-lang="fr-ca">
 				French (Canada)
+			</div>
+		
+			<div class="button " data-lang="fr">
+				French
 			</div>
 		
 			<div class="button " data-lang="gl">
@@ -146,6 +178,14 @@ moment().format();</pre>
 		
 			<div class="button " data-lang="he">
 				Hebrew
+			</div>
+		
+			<div class="button " data-lang="hi">
+				Hindi
+			</div>
+		
+			<div class="button " data-lang="hr">
+				Croatian
 			</div>
 		
 			<div class="button " data-lang="hu">
@@ -168,6 +208,10 @@ moment().format();</pre>
 				Japanese
 			</div>
 		
+			<div class="button " data-lang="ka">
+				Georgian
+			</div>
+		
 			<div class="button " data-lang="ko">
 				Korean
 			</div>
@@ -176,40 +220,64 @@ moment().format();</pre>
 				Latvian
 			</div>
 		
-			<div class="button " data-lang="ms-my">
-				Bahasa Malaysian
+			<div class="button " data-lang="ml">
+				Malayalam
 			</div>
 		
-			<div class="button " data-lang="ne">
-				Nepalese
+			<div class="button " data-lang="mr">
+				Marathi
+			</div>
+		
+			<div class="button " data-lang="ms-my">
+				Bahasa Malaysian
 			</div>
 		
 			<div class="button " data-lang="nb">
 				Norwegian
 			</div>
 		
+			<div class="button " data-lang="ne">
+				Nepalese
+			</div>
+		
 			<div class="button " data-lang="nl">
 				Dutch
+			</div>
+		
+			<div class="button " data-lang="nn">
+				Norwegian Nynorsk
 			</div>
 		
 			<div class="button " data-lang="pl">
 				Polish
 			</div>
 		
+			<div class="button " data-lang="pt-br">
+				Portuguese (Brazil)
+			</div>
+		
 			<div class="button " data-lang="pt">
 				Portuguese
 			</div>
 		
-			<div class="button " data-lang="pt-br">
-				Portuguese (Brazil)
+			<div class="button " data-lang="ro">
+				Romanian
 			</div>
 		
 			<div class="button " data-lang="ru">
 				Russian
 			</div>
 		
+			<div class="button " data-lang="sk">
+				Slovak
+			</div>
+		
 			<div class="button " data-lang="sl">
 				Slovenian
+			</div>
+		
+			<div class="button " data-lang="sq">
+				Albanian
 			</div>
 		
 			<div class="button " data-lang="sv">
@@ -232,6 +300,10 @@ moment().format();</pre>
 				Ukrainian
 			</div>
 		
+			<div class="button " data-lang="uz">
+				Uzbek
+			</div>
+		
 			<div class="button " data-lang="zh-cn">
 				Chinese
 			</div>
@@ -245,11 +317,11 @@ moment().format();</pre>
 		<article>
 			<h2>Timeago</h2>
 			<div class="input">
-				<pre lang="javascript">moment(<span class="string">"20111031"</span>, <span class="string">"YYYYMMDD"</span>).fromNow();
-moment(<span class="string">"20120620"</span>, <span class="string">"YYYYMMDD"</span>).fromNow();
-moment().startOf(<span class="string">'day'</span>).fromNow();
-moment().endOf(<span class="string">'day'</span>).fromNow();
-moment().startOf(<span class="string">'hour'</span>).fromNow();</pre>
+				<pre lang="javascript">moment("20111031", "YYYYMMDD").fromNow();
+moment("20120620", "YYYYMMDD").fromNow();
+moment().startOf('day').fromNow();
+moment().endOf('day').fromNow();
+moment().startOf('hour').fromNow();</pre>
 			</div>
 			<div class="output">
 				<pre id="js-from-now"></pre>
@@ -258,14 +330,14 @@ moment().startOf(<span class="string">'hour'</span>).fromNow();</pre>
 		<article>
 			<h2>Calendar Time</h2>
 			<div class="input">
-				<pre lang="javascript">moment().subtract(<span class="string">'days'</span>, <span class="number">10</span>).calendar();
-moment().subtract(<span class="string">'days'</span>, <span class="number">6</span>).calendar();
-moment().subtract(<span class="string">'days'</span>, <span class="number">3</span>).calendar();
-moment().subtract(<span class="string">'days'</span>, <span class="number">1</span>).calendar();
+				<pre lang="javascript">moment().subtract('days', 10).calendar();
+moment().subtract('days', 6).calendar();
+moment().subtract('days', 3).calendar();
+moment().subtract('days', 1).calendar();
 moment().calendar();
-moment().add(<span class="string">'days'</span>, <span class="number">1</span>).calendar();
-moment().add(<span class="string">'days'</span>, <span class="number">3</span>).calendar();
-moment().add(<span class="string">'days'</span>, <span class="number">10</span>).calendar();</pre>
+moment().add('days', 1).calendar();
+moment().add('days', 3).calendar();
+moment().add('days', 10).calendar();</pre>
 			</div>
 			<div class="output">
 				<pre id="js-calendar"></pre>
@@ -274,10 +346,14 @@ moment().add(<span class="string">'days'</span>, <span class="number">10</span>)
 		<article>
 			<h2>Internationalization</h2>
 			<div class="input">
-				<pre lang="javascript">moment().format(<span class="string">'L'</span>);
-moment().format(<span class="string">'LL'</span>);
-moment().format(<span class="string">'LLL'</span>);
-moment().format(<span class="string">'LLLL'</span>);</pre>
+				<pre lang="javascript">moment().format('L');
+moment().format('l');
+moment().format('LL');
+moment().format('ll');
+moment().format('LLL');
+moment().format('lll');
+moment().format('LLLL');
+moment().format('llll');</pre>
 			</div>
 			<div class="output">
 				<pre id="js-lang"></pre>
@@ -291,9 +367,10 @@ moment().format(<span class="string">'LLLL'</span>);</pre>
 		</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script src="js/home.min.js?v=2013-04-18T14:36:21-07:00"></script>
-
+		<script src="static/js/global.min-v=2013-10-14T04_34_24-04_00.js"></script>
 		
+	<script src="static/js/core-home-v=2013-10-14T04_34_24-04_00.js"></script>
+
 
 		<script>
 			window._gaq = [['_setAccount','UA-10641787-5'],['_trackPageview'],['_trackPageLoadTime']];
