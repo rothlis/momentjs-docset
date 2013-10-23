@@ -14,6 +14,6 @@ Manually copy and paste the Docset Feed URL in Dash > Preferences... > Downloads
 
 or
 
-Copy and pasting this custom URL scheme in Chrome/Safari, which will cause Dash to subscribe to that feed:
+Copy and paste this custom URL scheme in Chrome/Safari, which will cause Dash to subscribe to that feed:
 
 `dash-feed://https%3A%2F%2Fgithub.com%2Frothlis%2Fmomentjs-docset%2Fraw%2Fmaster%2FMomentJS.xml`
